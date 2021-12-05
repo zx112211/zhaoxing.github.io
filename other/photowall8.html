@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>我们的故事</title>
+    <style>
+		/* 设置css样式，实现页面效果 */
+		/* 格式化页面 */
+    * {
+    margin:0;
+    padding:0;
+    }
+    /* 设置body属性 */
+    body {
+        /* background-image:url("image/back.jpg"); */
+        padding-top: 10px;
+    }
+	/* 设置p标签属性 */
+	p{
+		line-height: 35px;
+		font-family: "仿宋";
+		font-weight: bolder;
+		font-size: 25px;
+		text-shadow: 6px 6px 0px rgba(0,0,0,0,2);
+	}
+
+	.p8{
+		text-align: left;
+	}
+ 
+    .container {
+        width:960px;
+        height:450px;
+        margin:30px auto;
+        position:relative;
+    }
+ 
+    .img {
+        /*宽度可以根据自己选择的照片内容而定*/
+        width:150px;
+    }
+ 
+    .container img:hover {
+        box-shadow:15px 15px 20px rgba(50,50,50,0.4);
+        transform:rotate3d(1,1,1,180deg) scale(1.50);
+        -webkit-transform:rotate3d(1,1,1,180deg) scale(1.50);
+        -moz-transform:rotate3d(0deg,0deg,0deg) scale(1.50);
+        -ms-transform:rotate3d(0deg,0deg,0deg) scale(1.50);
+        /*本身图片的z-index是1，鼠标经过时候设置成2，那么这张图片就会"上来"*/
+        z-index:2;
+    }
+ 
+    .container img {
+        /*给照片加一个相框的效果*/
+        padding: 10px 10px 15px;
+        background-color: white;
+        border: 1px solid #ddd;
+        box-shadow: 2px 2px 3px rgba(50,50,50,0.4);
+        /*渐出动画效果*/
+        -moz-transition: all 0.5s ease-in;
+        -o-transition: all 0.5s ease-in;
+        -webkit-transition: all 0.5s ease-in;
+        transition: all 0.5s ease-in;
+        z-index: 1;
+    }
+ 
+
+	.img23 {
+	    left:600px;
+	    top:0;
+	    /*旋转角度可以根据自己的审美观定夺*/
+	    transform:rotate(-20deg);
+	    -webkit-transform:rotate(-20deg);
+	    -moz-transform:rotate(-20deg);
+	    -ms-transform:rotate(-20deg);
+	}
+	 
+	.img24 {
+	    bottom:0px;
+	     right:0;
+	    transform:rotate(5deg);
+	    -webkit-transform:rotate(5deg);
+	    -moz-transform:rotate(5deg);
+	    -ms-transform:rotate(5deg);
+	}
+	.img25 {
+		left:600px;
+	    top:0;
+	    /*旋转角度可以根据自己的审美观定夺*/
+	    transform:rotate(20deg);
+	    -webkit-transform:rotate(20deg);
+	    -moz-transform:rotate(20deg);
+	    -ms-transform:rotate(20deg);
+	}
+	.img26 {
+	    bottom:0px;
+	     right:0;
+	    transform:rotate(45deg);
+	    -webkit-transform:rotate(5deg);
+	    -moz-transform:rotate(5deg);
+	    -ms-transform:rotate(5deg);
+	}
+	
+	.button{
+	    width: 100px;
+	    height: 30px;
+	    -moz-border-radius: 4px;
+	    -webkit-border-radius: 4px;
+	    border-radius: 4px;
+	    background-color: #008B8B;
+	    font-style:#fff; 
+	} 
+	
+    .button{
+        width: 100px;
+        height: 30px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        background-color: #008B8B;
+        font-style:#fff; 
+    } 
+	
+
+    </style>
+</head>
+<body>
+    <input class="button" name="Submit " type="submit" value="返回" onclick="javascript:history.back()" /> 
+    <div class="container">
+		<img class="img img23" src="image/23.jpg" />
+		<img class="img img24" src="image/24.jpg" />
+		<img class="img img25" src="image/25.jpg" />
+		<img class="img img26" src="image/26.jpg" />
+		<p class="p8"><br/><br/><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;万物需要阳光，生活需要方向，就像生活不止柴米油盐，更有诗和远方。我用最美的年华，见过最美的风景。祖国的风景万变不一，我愿在未来时光慢慢去看山河落日，沿途欣赏山川湖泊，见证祖国的繁荣昌盛。<br/><br/><br/><br/><br/><br/><br/></p>
+    </div>
+</body>
+</html> 

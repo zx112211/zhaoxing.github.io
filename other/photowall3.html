@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>我们的故事</title>
+    <style>
+		/* 设置css样式，实现页面效果 */
+		/* 格式化页面 */
+    * {
+    margin:0;
+    padding:0;
+    }
+    /* 设置body属性 */
+    body {
+        /* background-image:url("image/back.jpg"); */
+        padding-top: 10px;
+    }
+	/* 设置p标签属性 */
+	p{
+		line-height: 35px;
+		font-family: "仿宋";
+		font-weight: bolder;
+		font-size: 25px;
+		text-shadow: 6px 6px 0px rgba(0,0,0,0,2);
+	}
+	
+	.p3{
+		text-align: left;
+	}
+	 
+    .container {
+        width:960px;
+        height:450px;
+        margin:30px auto;
+        position:relative;
+    }
+ 
+    .img {
+        /*宽度可以根据自己选择的照片内容而定*/
+        width:150px;
+    }
+ 
+    .container img:hover {
+        box-shadow:15px 15px 20px rgba(50,50,50,0.4);
+        transform:rotate3d(1,1,1,180deg) scale(1.50);
+        -webkit-transform:rotate3d(1,1,1,180deg) scale(1.50);
+        -moz-transform:rotate3d(0deg,0deg,0deg) scale(1.50);
+        -ms-transform:rotate3d(0deg,0deg,0deg) scale(1.50);
+        /*本身图片的z-index是1，鼠标经过时候设置成2，那么这张图片就会"上来"*/
+        z-index:2;
+    }
+ 
+    .container img {
+        /*给照片加一个相框的效果*/
+        padding: 10px 10px 15px;
+        background-color: white;
+        border: 1px solid #ddd;
+        box-shadow: 2px 2px 3px rgba(50,50,50,0.4);
+        /*渐出动画效果*/
+        -moz-transition: all 0.5s ease-in;
+        -o-transition: all 0.5s ease-in;
+        -webkit-transition: all 0.5s ease-in;
+        transition: all 0.5s ease-in;
+        z-index: 1;
+    }
+ 
+
+ 
+    .img9 {
+        left:550px;
+        top:100px;
+        transform:rotate(15deg);
+        -webkit-transform:rotate(15deg);
+        -moz-transform:rotate(15deg);
+        -ms-transform:rotate(15deg);
+    }
+
+    .img10{
+        left:0px;
+        top:0px;
+        /*旋转角度可以根据自己的审美观定夺*/
+        transform:rotate(-20deg);
+        -webkit-transform:rotate(-20deg);
+        -moz-transform:rotate(-20deg);
+        -animation-fill-ms-transform:rotate(-20deg);
+    }
+	.img11 {
+	    left:400px;
+	    top:0;
+	    /*CSS3属性transform:旋转:rotate,缩放:scale,倾斜:skew */
+	    transform:rotate(-5deg);
+	    /*-webkit代表chrome、safari私有属性*/
+	    -webkit-transform:rotate(-5deg);
+	    /*-moz代表firefox浏览器私有属性*/
+	    -moz-transform:rotate(-5deg);
+	    /*-ms代表IE浏览器私有属性*/
+	    -ms-transform:rotate(-5deg);
+	}
+	 
+		
+	.button{
+	    width: 100px;
+	    height: 30px;
+	    -moz-border-radius: 4px;
+	    -webkit-border-radius: 4px;
+	    border-radius: 4px;
+	    background-color: #008B8B;
+	    font-style:#fff; 
+	} 
+	
+    .button{
+        width: 100px;
+        height: 30px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        background-color: #008B8B;
+        font-style:#fff; 
+    } 
+	
+
+    </style>
+</head>
+<body>
+    <input class="button" name="Submit " type="submit" value="返回" onclick="javascript:history.back()" /> 
+    <div class="container">
+       
+        <img class="img img9" src="image/9.jpg" />
+        <img class="img img10" src="image/10..jpg" />
+		<img class="img img11" src="image/11%20.jpg" />
+		<p class="p3"><br/><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;天色近晚，太阳逐，太阳逐渐落向山的那一边，只留下半边秀红的笑脸，<br/>映照着西天上绮丽的晚霞，晚饭过后，我们拿上果汁和篮球，准备在夕阳下有<br/>一场简单的运动，挥洒汗水，映照着自己的青春年华，那感觉就像是告别少年<br/>走向成熟，一个时代最后的剧终。<br/><br/><br/><br/><br/></p>
+		
+    </div>
+</body>
+</html> 
