@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>主页</title>
+		<style>
+			* { 
+				/* CSS样式重置 */
+				margin:0; 
+				padding:0;
+			}
+
+			body {
+				/* background:url(./image/back.jpg) 0 0 repeat; */
+				padding:35px 0 0;
+				margin:auto;
+				text-align:center;
+			}
+
+			.ribbon {
+				display:inline-block;
+			}
+
+			.ribbon:after, .ribbon:before {
+				margin-top:0.5em;
+				content: "";
+				float:left;
+				border:1.5em solid #E6E6FA;
+			}
+
+			.ribbon:after {
+				border-right-color:transparent;
+			}
+
+			.ribbon:before {
+				border-left-color:transparent;
+			}
+
+			.ribbon a:link, .ribbon a:visited { 
+				color:#000;
+				text-decoration:none;
+			    float:left;
+			    height:3.5em;
+				overflow:hidden;
+			}
+
+			.ribbon span {
+				background:#E6E6FA;
+				display:inline-block;
+				line-height:3em;
+				padding:0 1em;
+				margin-top:0.5em;
+				position:relative;
+
+				-webkit-transition: background-color 0.2s, margin-top 0.2s; 
+				-moz-transition: background-color 0.2s, margin-top 0.2s;  
+				-ms-transition: background-color 0.2s, margin-top 0.2s; 
+				-o-transition: background-color 0.2s, margin-top 0.2s; 
+				transition: background-color 0.2s, margin-top 0.2s;
+			}
+
+			.ribbon a:hover span {
+				background:#FFD204;
+				margin-top:0;
+			}
+
+			.ribbon span:before {
+				content: "";
+				position:absolute;
+				top:3em;
+				left:0;
+				border-right:0.5em solid #9B8651;
+				border-bottom:0.5em solid #fff;
+			}
+
+			.ribbon span:after {
+				content: "";
+				position:absolute;
+				top:3em;
+				right:0;
+				border-left:0.5em solid #9B8651;
+				border-bottom:0.5em solid #fff;
+			}
+			.bdh{
+				width:900px;
+				height:600px;
+				margin:10px auto;
+				border:1px solid #fff;
+				background: url(./image/tubiao.jpg);
+				background-size:100% 100%;
+				border-radius: 50% 50%;
+				line-height: 30px;
+			}
+			.bd{
+				width:400px;
+				height:400px;
+				margin:120px auto;
+				text-align: left;
+				position:relative;	
+			}
+			p{
+				font-family: "仿宋";
+				font-size:30px;
+				top:150px;
+				font-weight: bolder;
+			}
+			.footer {
+                height: 40px;
+                line-height: 40px;
+                position: relative;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+                color: #000;
+                font-family: Arial;
+                font-size: 20px;
+                letter-spacing: 1px;
+            }
+		</style>
+	</head>
+	<body>
+		<div class='ribbon'>
+			<a href='../index.html'><span>首页</span></a>
+			<a href='photowall.html'><span>美食</span></a>
+			<a href='photowall2.html'><span>插花</span></a>
+			<a href='photowall3.html'><span>晚霞</span></a>
+			<a href='photowall4.html'><span>秋冬</span></a>
+			<a href='photowall5.html'><span>快乐</span></a>
+			<a href='photowall6.html'><span>探店</span></a>
+			<a href='photowall7.html'><span>青春</span></a>
+			<a href='photowall8.html'><span>风景</span></a>
+			<a href='music.html'><span>酷音乐吧</span></a>
+			<a href='messageboard.html'><span>留言板</span></a>
+		</div>
+
+		<div class="bdh">
+			<div class="bd">
+				<p>&nbsp; &nbsp;张开翱翔的翅膀，追逐理想；荡起快乐的双桨，迎接希望。带着理想，举起希望，携着坚强，勇敢前往通向成功的大道上！愿心如所想！<br/><span style="color:#000000">&nbsp; &nbsp; 见一面吧，在餐厅，在花店，在有黄昏的傍晚，在秋冬，在快乐的时光里都有你，正当年轻，记录生活，享受生活。</span></p>
+			</div>
+	    	</div>
+
+	    <div class="footer">
+	    	Memories of youth! 
+	    </div>
+	</body>
+</html>
